@@ -1,21 +1,79 @@
-# React + TypeScript + Vite
+# Job Portal - MERN Stack
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description
 
-While this project uses React, Vite supports many popular JS frameworks. [See all the supported frameworks](https://vitejs.dev/guide/#scaffolding-your-first-vite-project).
+A modern job portal web application built using the **MERN stack** (MongoDB, Express.js, React, Node.js) that allows users to easily find job listings, create profiles, and apply for jobs. The platform provides a seamless experience for both job seekers and employers to interact and connect.
 
-## Deploy Your Own
+## Key Features:
 
-Deploy your own Vite project with Vercel.
+### For Job Seekers:
+- **User Registration & Authentication**: Secure login/signup functionality with JWT-based authentication.
+- **Profile Management**: Create and update personal profiles, including resumes and contact information.
+- **Search Jobs**: Filter job listings based on categories, location, experience level, salary, and more.
+- **Job Alerts**: Get notified about new job postings based on specific preferences.
+- **Job Applications**: Apply directly to jobs, upload resumes, and track application status.
+- **Dashboard**: A user-friendly dashboard to manage applications, saved jobs, and profile information.
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/vercel/tree/main/examples/vite-react&template=vite-react)
+### For Employers:
+- **Company Profiles**: Employers can create and manage their company profiles.
+- **Job Postings**: Post and manage job openings, with detailed descriptions and application requirements.
+- **Candidate Management**: View applications, manage candidates, and contact applicants directly.
+- **Dashboard**: Employers have a dedicated dashboard to track applicants and manage their job listings.
 
-_Live Example: https://vite-react-example.vercel.app_
+### General Features:
+- **Admin Panel**: Admins can manage users, job postings, and oversee site activity.
+- **Responsive UI**: A mobile-friendly, modern UI built using React, ensuring a great experience across devices.
+- **Real-Time Notifications**: Job seekers and employers are notified about key events like job applications, profile updates, and more.
 
-### Deploying From Your Terminal
+## Tech Stack:
 
-You can deploy your new Vite project with a single command from your terminal using [Vercel CLI](https://vercel.com/download):
+- **Frontend**: React, Redux for state management, React Router for navigation, and Material-UI for the user interface.
+- **Backend**: Node.js with Express.js for building RESTful APIs.
+- **Database**: MongoDB for storing user profiles, job postings, and application data.
+- **Authentication**: JSON Web Tokens (JWT) for secure authentication.
+- **Deployment**: Deployed on platforms like Heroku, AWS, or DigitalOcean for scalability and reliability.
 
-```shell
-$ vercel
+## Installation
+
+To run the project locally, follow these steps:
+
+1. Clone the repository:
+
+```bash
+git clone <repository-url>
+cd job-portal
 ```
+
+2. Install dependencies:
+
+```bash
+# Install client-side dependencies
+cd client
+npm install
+
+# Install server-side dependencies
+cd ../server
+npm install
+```
+
+3. Run the application:
+
+```bash
+# Start the client
+cd client
+npm start
+
+# Start the server
+cd ../server
+npm start
+```
+
+4. Open the application in your browser: `http://localhost:3000`
+
+## License
+
+This project is licensed under the MIT License.
+
+---
+
+Feel free to modify the description and adjust the details to fit your exact implementation.
